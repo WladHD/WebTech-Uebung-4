@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Übung 4</title>
+    </head>
+    <body>
+        <h1>Übung 4</h1>
+        <main>
+            <section>
+                <h2>Aufgabe 3</h2>
+                <h3>Teil 1</h3>
+                <form>
+                    <fieldset>
+                        <legend>[A-Z]{1,4}#+[123]?</legend>
+                        <label>Regex-Eingabe <input type="text" pattern="[A-Z]{1,4}#+[123]?" required></label>
+                    </fieldset>
+                    <input type="submit">
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gültige Wörter</th>
+                            <th>Ungültige Wörter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A#</td>
+                            <td>a#</td>
+                        </tr>
+                        <tr>
+                            <td>AAAA########3</td>
+                            <td>A3</td>
+                        </tr>
+                        <tr>
+                            <td>ABCD#</td>
+                            <td>A#123</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Teil 2</h3>
+                <form>
+                    <fieldset>
+                        <legend>(Tic){1,3}((Tac)|(Toc)|(TacToc)|(TocTac))</legend>
+                        <label>Regex-Eingabe <input type="text" pattern="(Tic){1,3}((Tac)|(Toc)|(TacToc)|(TocTac))"
+                                                    required></label>
+                    </fieldset>
+                    <input type="submit">
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gültige Wörter</th>
+                            <th>Ungültige Wörter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TicTicTicTac</td>
+                            <td>TacTic</td>
+                        </tr>
+                        <tr>
+                            <td>TicToc</td>
+                            <td>TicTicTicTic</td>
+                        </tr>
+                        <tr>
+                            <td>TicTicTocTac</td>
+                            <td>TocTacTac</td>
+                        </tr>
+                        <tr>
+                            <td>TicTacToc</td>
+                            <td>Tic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

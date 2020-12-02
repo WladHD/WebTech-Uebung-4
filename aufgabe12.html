@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Übung 4</title>
+    </head>
+    <body>
+        <h1>Übung 4</h1>
+        <main>
+            <h2>Aufgabe 1+2</h2>
+            <form action="newsletter.php" method="post">
+                <fieldset>
+                    <legend>Angaben:</legend>
+
+                    <label>E-Mail <input type="mailAddr" name="email" required></label>
+                    <br>
+                    <label>Themen
+                        <select name="topics" multiple required>
+                            <option value="geocaching">Geocaching</option>
+                            <option value="bouldern" selected>Bouldern</option>
+                            <option value="sport-stacking">Sport Stacking</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <label><input type="radio" name="action" value="sub" checked> abonnieren</label>
+                <label><input type="radio" name="action" value="unsub"> abbestellen</label>
+                <br>
+                <input type="submit" value="Daten absenden">
+            </form>
+        </main>
+    </body>
+</html>
